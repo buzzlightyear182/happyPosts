@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>happyPosts on AngularJS</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/js/bundle.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+</head>
+<body ng-app="happyPosts" ng-controller='MainCtrl'>
+  <div class='container' ng-repeat="post in posts">
+    {{post}}
+  </div>
+</body>
+</html>
