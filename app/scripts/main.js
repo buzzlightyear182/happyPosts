@@ -4,6 +4,21 @@ var angular = require('angular');
 var app = angular.module('happyPosts', ['ui.bootstrap']);
 
 app.controller('MainCtrl', function($scope){
-  $scope.test = 'Hello World!';
-  $scope.posts = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
+
+  $scope.posts = [
+  {title: 'Post 1', upvotes: 5},
+  {title: 'Post 2', upvotes: 2},
+  {title: 'Post 3', upvotes: 15},
+  {title: 'Post 4', upvotes: 9},
+  {title: 'Post 5', upvotes: 4}
+  ];
+
+  $scope.addPost = function(){
+    //Prevent user from submitting blank
+    if(!$scope.title || $scope.title === ''){
+      return
+    }
+    $scope.posts.push({title: $scope.title, upvotes: 0});
+    $scope.title='';
+  }
 });
