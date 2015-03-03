@@ -1,17 +1,22 @@
 'use strict';
 var angular = require('angular');
 
-var app = angular.module('happyPosts', ['ui.bootstrap']);
+var app = angular.module('happyPosts', ['ui.bootstrap', 'ui.router']);
 
-app.controller('MainCtrl', function($scope){
+app.factory('posts', function(){
+  var o = {posts: [
+    {title: 'Post 1', upvotes: 5},
+    {title: 'Post 2', upvotes: 2},
+    {title: 'Post 3', upvotes: 15},
+    {title: 'Post 4', upvotes: 9},
+    {title: 'Post 5', upvotes: 4}
+    ]};
+  return o;
+})
 
-  $scope.posts = [
-  {title: 'Post 1', upvotes: 5},
-  {title: 'Post 2', upvotes: 2},
-  {title: 'Post 3', upvotes: 15},
-  {title: 'Post 4', upvotes: 9},
-  {title: 'Post 5', upvotes: 4}
-  ];
+app.controller('MainCtrl', function($scope, posts){
+
+  $scope.posts = posts.posts;
 
   $scope.addPost = function(){
     //Prevent user from submitting blank

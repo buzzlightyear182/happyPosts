@@ -98,7 +98,7 @@ gulp.task('watch', ['lint'], function() {
     'browserify'
   ]);
   // Watch our sass files
-  gulp.watch(['app/styles/**/*.scss'], [
+  gulp.watch(['app/styles/*.scss'], [
     'styles'
   ]);
 
