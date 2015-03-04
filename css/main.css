@@ -13,3 +13,7 @@ a {
 
 a:hover {
   color: #148f77; }
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #148f77;
+  border-color: #148f77; }
