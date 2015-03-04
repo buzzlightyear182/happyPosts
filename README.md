@@ -3,6 +3,8 @@
 
 [Check it out here](http://buzzlightyear182.github.io/happyPosts/)
 
+[![screenshot](https://github.com/buzzlightyear182/happyPosts/blob/master/screenshot.png)](http://buzzlightyear182.github.io/happyPosts/)
+
 -------------------
 ####Basic functions:
 
