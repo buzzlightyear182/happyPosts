@@ -19,3 +19,8 @@ a {
  a:hover {
   color: darken($turquoise, 10%);
 }
+
+.btn-primary:hover,.btn-primary:active, .btn-primary:focus {
+  background-color: darken($turquoise, 10%);
+  border-color: darken($turquoise, 10%);
+}

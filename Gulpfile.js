@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
     // clean = require('gulp-clean');
+var ghPages = require('gulp-gh-pages');
 
 // Modules for webserver and livereload
 var embedlr = require('gulp-embedlr'),
@@ -111,3 +112,8 @@ gulp.task('watch', ['lint'], function() {
 });
 
 gulp.task('default', ['dev', 'watch']);
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
