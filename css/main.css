@@ -1,0 +1,15 @@
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
+.btn-primary, .panel-primary > .panel-heading {
+  background-color: #1abc9c;
+  border-color: #1abc9c; }
+
+.panel-primary {
+  border-color: #1abc9c; }
+
+a {
+  color: #1abc9c; }
+
+a:hover {
+  color: #148f77; }
