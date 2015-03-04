@@ -1,5 +1,7 @@
-## happyPosts
+## [happyPosts](http://buzzlightyear182.github.io/happyPosts/)
 *Exercise in building a AngularJS single-page app to store links/posts and utilize with Rails to build a JSON REST API that interacts with the AngularJS frontend*
+
+[Check it out here](http://buzzlightyear182.github.io/happyPosts/)
 
 -------------------
 ####Basic functions:
