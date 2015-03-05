@@ -1,7 +1,9 @@
-## [happyPosts](http://buzzlightyear182.github.io/happyPosts/)
-*Exercise in building a AngularJS single-page app to store links/posts and utilize with Rails to build a JSON REST API that interacts with the AngularJS frontend*
+## [happyPosts on AngularJS](http://buzzlightyear182.github.io/happyPosts/)
+*Exercise in building a AngularJS single-page app to store links/posts.*
+ 
+####Update: [Click here for Rails Git repo](https://github.com/buzzlightyear182/happyPosts-rails) or see it on [Heroku](http://happy-posts.herokuapp.com/)
 
-[Check it out here](http://buzzlightyear182.github.io/happyPosts/)
+[AngularJS version only](http://buzzlightyear182.github.io/happyPosts/)
 
 [![screenshot](https://github.com/buzzlightyear182/happyPosts/blob/master/screenshot.png)](http://buzzlightyear182.github.io/happyPosts/)
 
@@ -17,8 +19,6 @@
 4. View comments for a given post
 
 5. Upvote posts and comments
-
-6. Add user authentication system using Devise
 
 -----------------------
 ####Tools used:
